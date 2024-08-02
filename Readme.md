@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Igor Belokrys](https://up.htmlacademy.ru/htmlcss-individual/2/user/2559621).
-* Наставник: `Неизвестно`.
+- Студент: [Igor Belokrys](https://up.htmlacademy.ru/htmlcss-individual/2/user/2559621).
+- Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
 
 ---
 
