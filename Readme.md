@@ -2,6 +2,7 @@
 
 - Студент: [Igor Belokrys](https://up.htmlacademy.ru/htmlcss-individual/2/user/2559621).
 - Наставник: [Анна Лисененкова](https://htmlacademy.ru/profile/ankhena).
+- Сайт: [Проект "Седона"](https://igorbelokrys.github.io/2559621-sedona-2/).
 
 ---
 
