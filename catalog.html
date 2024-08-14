@@ -10,8 +10,8 @@
       <a class="logo" href="index.html" aria-current="page">
         <img class="logo-image" src="#" alt="Логотип сайта Седона" />
       </a>
-      <!--first nav-->
       <nav class="nav">
+        <!--first nav-->
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Главная</a>
@@ -38,7 +38,7 @@
             >
           </li>
           <li class="nav-item-user">
-            <a class="nav-link-user" href="#">Хочу сюда</a>
+            <a class="nav-link-user button-user" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -46,7 +46,7 @@
     <!--header end-->
     <!--main start-->
     <main class="main-inner">
-      <header class="inner-header">
+      <div class="inner-div">
         <h1 class="inner-title">Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
           <li class="breadcrumbs-item">
@@ -56,7 +56,7 @@
             <a class="breadcrumbs-link">Гостиницы</a>
           </li>
         </ul>
-      </header>
+      </div>
       <!--section-hotels-filter-->
       <section class="hotels-filter">
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
@@ -73,8 +73,8 @@
               <li class="catalog-filter-item">
                 <label class="control" for="pool"
                   ><input
-                    type="checkbox"
                     class="control-input"
+                    type="checkbox"
                     name="pool"
                     id="pool"
                     checked
@@ -84,8 +84,8 @@
               <li class="catalog-filter-item">
                 <label class="control" for="parking"
                   ><input
-                    type="checkbox"
                     class="control-input"
+                    type="checkbox"
                     name="parking"
                     id="parking"
                     checked
@@ -95,8 +95,8 @@
               <li class="catalog-filter-item">
                 <label class="control" for="Wi-Fi"
                   ><input
-                    type="checkbox"
                     class="control-input"
+                    type="checkbox"
                     name="Wi-Fi"
                     id="Wi-Fi"
                   />Wi-Fi</label
@@ -152,7 +152,7 @@
               id="from"
               placeholder="0"
             />
-            <label class="control" for="to">От</label>
+            <label class="control" for="to">До</label>
             <input
               class="control-input"
               type="text"
@@ -169,7 +169,11 @@
       <section class="catalog">
         <h2 class="catalog-title">Найдено гостиниц: 38</h2>
         <select class="catalog-select" name="catalog-select">
-          <option value="cheap">Сначала дешевые</option>
+          <option class="catalog-option" value="cheap">Сначала дешевые</option>
+          <option class="catalog-option" value="cheap">Сначала дорогие</option>
+          <option class="catalog-option" value="popular">
+            Сначала популярные
+          </option>
         </select>
         <!--icon-selected-->
         <ul class="icon-selected">
@@ -189,7 +193,7 @@
             >
           </li>
         </ul>
-        <!--catalog-list-->
+        <!--catalog-list-cards-->
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
@@ -242,7 +246,7 @@
             <p class="card-price">От 2500 ₽</p>
             <a class="card-link card-button" href="#">Подробнее</a>
             <button class="card-button">В избранное</button>
-            <p class="stars four-stars">
+            <p class="stars three-stars">
               <span class="visually-hidden">Отель 3 звезды</span>
             </p>
             <p class="card-rating">Рейтинг: 6,9</p>
@@ -262,7 +266,7 @@
             <p class="card-price">От 1500 ₽</p>
             <a class="card-link card-button" href="#">Подробнее</a>
             <button class="card-button">В избранное</button>
-            <p class="stars four-stars">
+            <p class="stars two-stars">
               <span class="visually-hidden">Отель 2 звезды</span>
             </p>
             <p class="card-rating">Рейтинг: 5,0</p>
@@ -302,10 +306,11 @@
           action="https://echo.htmlacademy.ru/"
           method="post"
         >
-          <label for="subscribe-mail" class="visually-hidden"
+          <label class="visually-hidden" for="subscribe-mail"
             >Укажите Ваш e-mail</label
           >
           <input
+            class="subscribe-input"
             type="email"
             id="subscribe-mail"
             name="user-mail"
@@ -320,32 +325,38 @@
     <!--main end-->
     <!--footer start-->
     <footer class="footer">
+      <!--section-social-->
       <section class="social">
         <h2 class="visually-hidden">Вы можете найти нас в социальных сетях</h2>
-        <ul class="social-link">
+        <ul class="social-list">
           <li class="social-item">
             <a class="social-link" href="#"
-              ><span class="visually-hidden">Вконтакте</span></a
-            >
+              ><img class="social-image" src="#" alt="Логотип Вконтакте"
+            /></a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#">
+              <img class="social-image" src="#" alt="Логотип Телеграмм"
+            /></a>
           </li>
           <li class="social-item">
             <a class="social-link" href="#"
-              ><span class="visually-hidden">Телеграмм</span></a
-            >
-          </li>
-          <li class="social-item">
-            <a class="social-link" href="#"
-              ><span class="visually-hidden">Youtube</span></a
-            >
+              ><img class="social-image" src="#" alt="Логотип Youtube"
+            /></a>
           </li>
         </ul>
       </section>
-      <section class="contacts">
+      <!--section-contacts-->
+      <address class="contacts">
         <h2 class="visually-hidden">Контакты</h2>
-        <a href="tel: +7 (812) 812-12-12" class="contact">+7 (812) 812-12-12</a>
-      </section>
+        <a class="contact-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
+      </address>
       <a class="author-logo" href="#">
-        <img src="#" alt="Логотип HTML Академии. Перейти на сайт Академии" />
+        <img
+          class="author-image"
+          src="#"
+          alt="Логотип HTML Академии. Перейти на сайт Академии"
+        />
       </a>
     </footer>
     <!--footer end-->
