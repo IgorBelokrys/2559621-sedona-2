@@ -2,16 +2,23 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link href="styles/style.css" rel="stylesheet" />
     <title>Страница каталога Седона</title>
   </head>
   <body>
     <!--header srart-->
     <header class="header">
       <a class="logo" href="index.html" aria-current="page">
-        <img class="logo-image" src="#" alt="Логотип сайта Седона" />
+        <img
+          class="logo-image"
+          src="images/logo-sedona.svg"
+          alt="Логотип сайта Седона"
+          width="140"
+          height="70"
+        />
       </a>
+      <!--first nav-->
       <nav class="nav">
-        <!--first nav-->
         <ul class="nav-list">
           <li class="nav-item">
             <a class="nav-link" href="index.html">Главная</a>
@@ -20,25 +27,23 @@
             <a class="nav-link" href="#">О Седоне</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link navigation-link-current" href="catalog.html"
-              >Гостиницы</a
-            >
+            <a class="nav-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <!--second nav-->
         <ul class="nav-user">
-          <li class="nav-item-user">
-            <a class="nav-link-user" href="#">
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="nav-item-user">
-            <a class="nav-link-user" href="#">
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">
               <span class="visually-hidden">Избранное</span></a
             >
           </li>
-          <li class="nav-item-user">
-            <a class="nav-link-user button-user" href="#">Хочу сюда</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -46,19 +51,19 @@
     <!--header end-->
     <!--main start-->
     <main class="main-inner">
-      <div class="inner-div">
-        <h1 class="inner-title">Гостиницы Седоны</h1>
-        <ul class="breadcrumbs">
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link" href="index.html">Главная</a>
-          </li>
-          <li class="breadcrumbs-item">
-            <a class="breadcrumbs-link">Гостиницы</a>
-          </li>
-        </ul>
-      </div>
       <!--section-hotels-filter-->
       <section class="hotels-filter">
+        <div class="inner-div">
+          <h1 class="inner-title">Гостиницы Седоны</h1>
+          <ul class="breadcrumbs">
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link" href="index.html">Главная</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a class="breadcrumbs-link">Гостиницы</a>
+            </li>
+          </ul>
+        </div>
         <h2 class="visually-hidden">Фильтр гостиниц</h2>
         <!--form filter-->
         <form
@@ -197,7 +202,13 @@
         <ul class="catalog-list">
           <li class="catalog-item">
             <a class="catalog-card-link" href="#" tabindex="-1">
-              <img class="catalog-card-image" src="#" alt="Звездное небо" />
+              <img
+                class="catalog-card-image"
+                src="images/hotel-1.jpg"
+                alt="Звездное небо"
+                width="300"
+                height="212"
+              />
             </a>
             <a class="catalog-card-link" href="#">
               <h3 class="catalog-card-title">Amara Resort & Spa</h3>
@@ -215,8 +226,10 @@
             <a class="catalog-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-card-image"
-                src="#"
+                src="images/hotel-2.jpg"
                 alt="Скала на фоне облаков и радуги"
+                width="300"
+                height="212"
               />
             </a>
             <a class="catalog-card-link" href="#">
@@ -235,8 +248,10 @@
             <a class="catalog-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-card-image"
-                src="#"
+                src="images/hotel-3.jpg"
                 alt="Скала на фоне неба"
+                width="300"
+                height="212"
               />
             </a>
             <a class="catalog-card-link" href="#">
@@ -255,8 +270,10 @@
             <a class="catalog-card-link" href="#" tabindex="-1">
               <img
                 class="catalog-card-image"
-                src="#"
+                src="images/hotel-4.jpg"
                 alt="Холм на фоне звездного неба"
+                width="300"
+                height="212"
               />
             </a>
             <a class="catalog-card-link" href="#">
@@ -330,19 +347,19 @@
         <h2 class="visually-hidden">Вы можете найти нас в социальных сетях</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="#"
-              ><img class="social-image" src="#" alt="Логотип Вконтакте"
-            /></a>
-          </li>
-          <li class="social-item">
             <a class="social-link" href="#">
-              <img class="social-image" src="#" alt="Логотип Телеграмм"
-            /></a>
+              <span class="visually-hidden">Ссылка на Вконтакте</span>
+            </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="#"
-              ><img class="social-image" src="#" alt="Логотип Youtube"
-            /></a>
+              ><span class="visually-hidden">Ссылка на Телеграмм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#"
+              ><span class="visually-hidden">Ссылка на Ютуб</span></a
+            >
           </li>
         </ul>
       </section>
@@ -352,11 +369,9 @@
         <a class="contact-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <a class="author-logo" href="#">
-        <img
-          class="author-image"
-          src="#"
-          alt="Логотип HTML Академии. Перейти на сайт Академии"
-        />
+        <span class="visually-hidden"
+          >Логотип HTML Академии. Перейти на сайт Академии</span
+        >
       </a>
     </footer>
     <!--footer end-->

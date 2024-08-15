@@ -2,13 +2,20 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8" />
+    <link href="styles/style.css" rel="stylesheet" />
     <title>Проект "Седона"</title>
   </head>
   <body>
     <!--header srart-->
     <header class="header">
       <a class="logo" href="index.html" aria-current="page">
-        <img class="logo-image" src="#" alt="Логотип сайта Седона" />
+        <img
+          class="logo-image"
+          src="images/logo-sedona.svg"
+          alt="Логотип сайта Седона"
+          width="140"
+          height="70"
+        />
       </a>
       <!--first nav-->
       <nav class="nav">
@@ -25,18 +32,18 @@
         </ul>
         <!--second nav-->
         <ul class="nav-user">
-          <li class="nav-item-user">
-            <a class="nav-link-user" href="#">
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="nav-item-user">
-            <a class="nav-link-user" href="#">
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">
               <span class="visually-hidden">Избранное</span></a
             >
           </li>
-          <li class="nav-item-user">
-            <a class="nav-link-user" href="#">Хочу сюда</a>
+          <li class="nav-user-item">
+            <a class="nav-user-link" href="#">Хочу сюда</a>
           </li>
         </ul>
       </nav>
@@ -49,9 +56,11 @@
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <img
           class="logo-welcome"
-          src="#"
+          src="images/welcome-title.svg"
           alt="Добро пожаловать в великолепную Седону, потому-что Гранд Каньон
           отстой!"
+          width="458"
+          height="352"
         />
       </section>
       <!--section-advantages-->
@@ -71,8 +80,10 @@
             </p>
             <img
               class="advantages-image"
-              src="#"
-              alt="На фоне здание находещееся в городке Седона"
+              src="images/real-city.jpg"
+              alt="На фоне здание с флагом"
+              width="800"
+              height="385"
             />
           </li>
           <li class="advantages-item">
@@ -98,7 +109,13 @@
             <p class="advantages-text">
               Да, по нему можно пройти! Если вы осмелитесь, разумеется
             </p>
-            <img class="advantages-image" src="#" alt="Мост дьявола" />
+            <img
+              class="advantages-image"
+              src="images/bridge.jpg"
+              alt="Мост дьявола"
+              width="800"
+              height="385"
+            />
           </li>
         </ul>
       </section>
@@ -177,19 +194,19 @@
         <h2 class="visually-hidden">Вы можете найти нас в социальных сетях</h2>
         <ul class="social-list">
           <li class="social-item">
-            <a class="social-link" href="#"
-              ><img class="social-image" src="#" alt="Логотип Вконтакте"
-            /></a>
-          </li>
-          <li class="social-item">
             <a class="social-link" href="#">
-              <img class="social-image" src="#" alt="Логотип Телеграмм"
-            /></a>
+              <span class="visually-hidden">Ссылка на Вконтакте</span>
+            </a>
           </li>
           <li class="social-item">
             <a class="social-link" href="#"
-              ><img class="social-image" src="#" alt="Логотип Youtube"
-            /></a>
+              ><span class="visually-hidden">Ссылка на Телеграмм</span>
+            </a>
+          </li>
+          <li class="social-item">
+            <a class="social-link" href="#"
+              ><span class="visually-hidden">Ссылка на Ютуб</span></a
+            >
           </li>
         </ul>
       </section>
@@ -199,11 +216,9 @@
         <a class="contact-link" href="tel:+78128121212">+7 (812) 812-12-12</a>
       </section>
       <a class="author-logo" href="#">
-        <img
-          class="author-image"
-          src="#"
-          alt="Логотип HTML Академии. Перейти на сайт Академии"
-        />
+        <span class="visually-hidden"
+          >Логотип HTML Академии. Перейти на сайт Академии</span
+        >
       </a>
     </footer>
     <!--footer end-->
