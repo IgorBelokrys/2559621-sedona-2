@@ -239,6 +239,18 @@ body {
   background-color: #82b3d3;
   color: #ffffff;
   border-style: none;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.subscribe-input {
+  font-family: inherit;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .contact-link {
@@ -328,6 +340,8 @@ body {
   font-weight: 400;
   line-height: 21px;
   border-color: #e5e5e5;
+  color: #333333;
+  background-color: #ffffff;
 }
 
 .catalog-card-link {
@@ -383,7 +397,7 @@ body {
   text-align: center;
 }
 
-.pagination-link-current {
+.pagination-link-active {
   background-color: #f2f2f2;
   color: #000000;
 }
