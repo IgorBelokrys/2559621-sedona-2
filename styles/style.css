@@ -467,7 +467,7 @@ body {
   justify-content: space-between;
 }
 
-..contacts {
+.contacts {
   display: flex;
   flex-wrap: wrap;
 }
