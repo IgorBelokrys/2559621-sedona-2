@@ -46,7 +46,8 @@ body {
 .catalog-filter-list,
 .icon-selected,
 .catalog-list,
-.pagination {
+.pagination,
+.catalog-filter-group {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -76,9 +77,6 @@ body {
   justify-content: space-between;
 }
 
-.logo {
-}
-
 .logo-menu {
   display: flex;
 }
@@ -92,7 +90,7 @@ body {
 }
 
 .nav-user {
-  width: 268px;
+  max-width: 268px;
 }
 
 .nav-link {
@@ -337,6 +335,14 @@ body {
   line-height: 21px;
 }
 
+.catalog-filter {
+  display: flex;
+}
+
+.inner-div {
+  margin-bottom: 40px;
+}
+
 .catalog-filter-group {
   border: none;
 }
@@ -381,7 +387,13 @@ body {
   padding: 50px 70px 60px;
 }
 
+.catalog-wrapper {
+  display: flex;
+  margin-bottom: 40px;
+}
+
 .catalog-title {
+  margin-right: 200px;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
@@ -394,6 +406,9 @@ body {
 }
 
 .catalog-select {
+  width: 292px;
+  padding: 14px 0px;
+  margin-right: 70px;
   font-family: inherit;
   font-size: 18px;
   font-weight: 400;
@@ -401,6 +416,18 @@ body {
   border-color: #e5e5e5;
   color: #333333;
   background-color: #ffffff;
+}
+
+.icon-selected {
+  display: flex;
+  flex-wrap: wrap;
+  min-width: 160px;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 80px;
 }
 
 .catalog-card-link {
@@ -444,6 +471,11 @@ body {
   font-weight: 400;
   line-height: 20px;
   text-align: center;
+}
+
+.pagination {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .pagination-link {
