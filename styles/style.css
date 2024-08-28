@@ -15,6 +15,9 @@
 }
 
 body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
@@ -24,14 +27,14 @@ body {
   color: #333333;
 }
 
-.visually-hidden {
-  position: fixed;
-  transform: scale(0);
-}
-
-.header {
+.container-site {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0 auto;
+  width: 1200px;
   background-color: #ffffff;
-  color: #000000;
+  box-shadow: 0 0 10px 0 #333333;
 }
 
 .nav-list,
@@ -45,6 +48,51 @@ body {
 .catalog-list,
 .pagination {
   list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-list,
+.nav-user {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.visually-hidden {
+  position: fixed;
+  transform: scale(0);
+}
+
+.header {
+  display: flex;
+  background-color: #ffffff;
+  color: #000000;
+  padding-right: 70px;
+  padding-left: 70px;
+  justify-content: space-between;
+}
+
+.logo {
+}
+
+.logo-menu {
+  display: flex;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  width: 450px;
+}
+
+.nav-user {
+  width: 268px;
 }
 
 .nav-link {
@@ -65,18 +113,16 @@ body {
   color: #ffffff;
 }
 
-.main-index,
-.main-catalog,
-.footer {
-  background-color: #ffffff;
-}
-
 .welcome {
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #c3d9eb;
-  text-align: center;
+}
+
+.logo-welcome {
+  display: block;
+  margin: 0 auto;
 }
 
 .advantages-lead {
@@ -144,6 +190,8 @@ body {
   text-align: center;
 }
 
+/* Не забыть про flex wrap там где перечисления, списки */
+
 .services-item {
   background-color: #83b3d31f;
 }
@@ -167,6 +215,7 @@ body {
 }
 
 .search {
+  padding: 96px 304px;
   text-align: center;
 }
 
@@ -183,9 +232,11 @@ body {
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
+  margin-bottom: 54px;
 }
 
 .search-link {
+  padding: 8px 50px;
   background-color: #756157;
   font-size: 20px;
   font-weight: 700;
@@ -194,9 +245,11 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  border-radius: 4px;
 }
 
 .subscribe {
+  padding: 96px 258px 104px;
   background-image: url(../images/subscription-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -263,6 +316,7 @@ body {
 }
 
 .hotels-filter {
+  padding: 35px 70px 70px;
   background-image: url(../images/filter-fon.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -271,6 +325,7 @@ body {
 }
 
 .inner-title {
+  margin: 0;
   font-size: 60px;
   font-weight: 700;
   line-height: 78px;
@@ -320,6 +375,10 @@ body {
   text-transform: uppercase;
   background: transparent;
   color: #ffffff;
+}
+
+.catalog {
+  padding: 50px 70px 60px;
 }
 
 .catalog-title {
@@ -400,4 +459,15 @@ body {
 .pagination-link-active {
   background-color: #f2f2f2;
   color: #000000;
+}
+
+.footer {
+  padding: 40px 70px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+..contacts {
+  display: flex;
+  flex-wrap: wrap;
 }
