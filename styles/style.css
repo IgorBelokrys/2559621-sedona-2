@@ -112,6 +112,7 @@ body {
 }
 
 .welcome {
+  margin-bottom: 69px;
   background-image: url(../images/index-background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -121,6 +122,16 @@ body {
 .logo-welcome {
   display: block;
   margin: 0 auto;
+}
+
+.advantages-lead {
+  max-width: 700px;
+  margin: 0 auto 25px;
+}
+
+.advantages-description {
+  max-width: 700px;
+  margin: 0 auto 90px;
 }
 
 .advantages-lead {
@@ -144,6 +155,7 @@ body {
 }
 
 .advantages-item-inner {
+  width: 400px;
   background-color: #83b3d333;
 }
 
@@ -500,6 +512,14 @@ body {
 }
 
 .contacts {
+  width: 720px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.social {
+  max-width: 183px;
   display: flex;
   flex-wrap: wrap;
 }
